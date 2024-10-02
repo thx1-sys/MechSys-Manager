@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import useFetchImage from "../../hooks/useFetchImage";
 
 const NavBarHome = () => {
   const { imageUrl } = useFetchImage("Logo_ITD.png");
   const [activeSection, setActiveSection] = useState("");
+  const navigate = useNavigate();
 
   const linkClasses =
     "text-[#B4B4B8] opacity-50 text-xl font-medium hover:opacity-90 transform transition duration-500 px-4 py-2 rounded-md image-with-white-glow";
@@ -25,6 +27,11 @@ const NavBarHome = () => {
     // Usar history.replaceState para ocultar el fragmento de la URL
     history.replaceState(null, null, " ");
     setActiveSection(id);
+  };
+
+  const handleLoginClick = (e) => {
+    e.preventDefault();
+    navigate("/login");
   };
 
   useEffect(() => {
@@ -124,12 +131,12 @@ const NavBarHome = () => {
           <ul className="w-full h-full flex space-x-4 justify-end items-center">
             <li>
               <a
-                className={`bg-[#0A170D] px-6 py-2 text-[#3E9055] font-inter rounded-xl hover:bg-[#3E9055] hover:text-[#0A170D] hover:shadow-green-lg transform transition duration-500 text-md border border-[#3E9055] ${
+                className={`bg-[#0A170D] cursor-pointer px-6 py-2 text-[#3E9055] font-inter rounded-xl hover:bg-[#3E9055] hover:text-[#0A170D] hover:shadow-green-lg transform transition duration-500 text-md border border-[#3E9055] ${
                   activeSection === "ingresar"
                     ? "bg-[#3E9055] text-[#0A170D]"
                     : ""
                 }`}
-                onClick={(e) => handleScroll(e, "ingresar")}
+                onClick={handleLoginClick}
               >
                 Ingresar
               </a>

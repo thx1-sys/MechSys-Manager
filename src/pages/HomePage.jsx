@@ -2,6 +2,7 @@ import { ViewHome } from "../components/Home/ViewHome";
 import { InfoPage } from "../components/Home/InfoPage";
 import { EquipmentGallery } from "../components/Section/EquipmentGallery";
 import { HomeFooter } from "../components/Footer/HomeFooter";
+import { CookieConsent } from "../hooks/CookieConsent";
 
 const HomePage = () => {
   return (
@@ -10,6 +11,7 @@ const HomePage = () => {
       <InfoPage />
       <EquipmentGallery />
       <HomeFooter />
+      <CookieConsent />
     </div>
   );
 };

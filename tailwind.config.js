@@ -56,6 +56,7 @@ module.exports = {
         "purple-lg": "0 0 15px 5px rgba(126, 84, 166, 0.5)",
         "white-lg": "0 0 15px 5px rgba(255, 255, 255, 0.5)",
         "gray-lg": "0 0 15px 5px rgba(117, 117, 117, 0.5)",
+        "red-lg": "0 0 15px 5px rgba(255, 0, 0, 0.5)",
       },
       fontSize: {
         xs: ".75rem",

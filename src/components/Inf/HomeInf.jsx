@@ -1,8 +1,11 @@
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import useFetchImage from "../../hooks/useFetchImage";
 import "../../styles/loader.css";
 
 const HomeInf = () => {
   const { imageUrl } = useFetchImage("IMG_HOME_1.webp");
+  const navigate = useNavigate();
 
   const handleScroll = (event, id) => {
     event.preventDefault();
@@ -22,6 +25,10 @@ const HomeInf = () => {
     history.replaceState(null, null, " ");
   };
 
+  const handleLoginClick = () => {
+    navigate("/login");
+  };
+
   return (
     <div className="w-screen flex items-center justify-center relative font-inter">
       {imageUrl && (
@@ -37,7 +44,10 @@ const HomeInf = () => {
               préstamos, asegurando un manejo eficiente de los recursos del
               laboratorio para estudiantes y profesores.
             </p>
-            <button className="w-4/10 bg-[#150E1C] px-4 py-2 text-[#7E54A6] font-inter rounded-xl hover:bg-[#7E54A6] hover:text-[#150E1C] hover:shadow-purple-lg transform transition duration-500 text-lg border border-[#7E54A6]">
+            <button
+              className="w-4/10 bg-[#150E1C] px-4 py-2 text-[#7E54A6] font-inter rounded-xl hover:bg-[#7E54A6] hover:text-[#150E1C] hover:shadow-purple-lg transform transition duration-500 text-lg border border-[#7E54A6]"
+              onClick={handleLoginClick}
+            >
               Ingresar
             </button>
             <a

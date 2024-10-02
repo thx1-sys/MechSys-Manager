@@ -32,7 +32,7 @@ const useFetchImage = (nameImage) => {
     if (retry) {
       intervalId = setInterval(() => {
         fetchImage();
-      }, 10000); // 10 seconds
+      }, 60000); // 1 minute
     }
 
     return () => clearInterval(intervalId); // Cleanup interval on component unmount

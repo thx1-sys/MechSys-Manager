@@ -1,6 +1,3 @@
-// PhoneIcon.js
-import React from "react";
-
 const PhoneIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"

@@ -1,5 +1,6 @@
 import "../../styles/loader.css";
 import { KeyFeatures } from "../Content/KeyFeatures";
+import { Link } from "react-router-dom";
 
 const InfoPage = () => {
   const handleScroll = (event, id) => {
@@ -40,9 +41,12 @@ const InfoPage = () => {
           <div className="w-full flex items-center justify-center">
             <ul className="grid grid-cols-2 gap-4 items-center justify-center">
               <li className="h-12 px-8 bg-[#1E1105] text-[#B1651E] font-inter rounded-xl hover:bg-[#B1651E] hover:text-[#1E1105] hover:shadow-orange-lg transform transition duration-500 text-xl flex items-center justify-center border border-[#B1651E]">
-                <a className="w-full h-full flex items-center justify-center">
+                <Link
+                  to="/signup"
+                  className="w-full h-full flex items-center justify-center"
+                >
                   Comenzar
-                </a>
+                </Link>
               </li>
               <li className="h-12 px-8 bg-[#091422] text-[#3375C8] font-inter rounded-xl hover:bg-[#3375C8] hover:text-[#091422] hover:shadow-blue-lg transform transition duration-500 text-xl flex items-center justify-center border border-[#3375C8]">
                 <a
