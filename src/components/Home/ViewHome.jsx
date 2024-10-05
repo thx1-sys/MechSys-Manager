@@ -26,12 +26,12 @@ const ViewHome = () => {
       </div>
       <div className="flex-grow flex items-center justify-center relative z-10">
         {error ? (
-          <div className="flex flex-col items-center justify-center h-full">
+          <div className="flex flex-col items-center justify-center h-full p-4">
             <div className="loader"></div>
             <p className="text-gray-600 mt-4 font-bold text-center text-lg">
               Tipo de Error: {error.message}
             </p>
-            <p className="text-gray-600 text-center font-medium text-">
+            <p className="text-gray-600 text-center font-medium">
               Error al cargar el contenido.
             </p>
           </div>
@@ -40,7 +40,7 @@ const ViewHome = () => {
             <div className="loader"></div>
           </div>
         ) : (
-          <div className="h-9/10 flex items-center justify-center">
+          <div className="h-9/10 flex items-center justify-center p-4">
             <HomeInf />
           </div>
         )}
