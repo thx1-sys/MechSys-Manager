@@ -33,7 +33,7 @@ const EquipmentGallery = () => {
       id="equipos"
       className="w-screen min-h-screen flex flex-col items-center justify-center equipment-gallery border-t border-[#303030] pb-20"
     >
-      <div className="w-full max-w-screen-xl text-center mb-4 mt-20">
+      <div className="w-full max-w-screen-xl text-center mb-4 mt-20 px-8 md:px-16 lg:px-40">
         <h3 className="text-4xl font-bold bg-gradient-to-b from-white to-gray-500 bg-clip-text text-transparent">
           ¿Qué equipos están disponibles en el laboratorio de Metal-Mecánica?
           <span className="block text-xl font-normal text-[#757575] mt-4">
@@ -43,12 +43,13 @@ const EquipmentGallery = () => {
           </span>
         </h3>
       </div>
-      <div className="w-full max-w-screen-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
+      <div className="w-full max-w-screen-xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-4 sm:p-8">
         {equipment.map((item, index) => (
           <EquipmentCard
             key={index}
             title={item.title}
             imageName={item.imageName}
+            className="aspect-w-1 aspect-h-1"
           />
         ))}
       </div>

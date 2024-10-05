@@ -44,7 +44,7 @@ const HomeInf = () => {
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 md:mb-6 leading-tight md:leading-snug typing-effect">
               MechSys Manager
             </h1>
-            <p className="text-sm md:text-md font-light mb-6 opacity-60">
+            <p className="text-sm md:text-xl font-light mb-6 opacity-60">
               Bienvenido al Sistema de Administración de Laboratorio del
               Departamento de Metal-Mecánica. Esta plataforma facilita la
               gestión de inventarios, reservación de equipos y control de

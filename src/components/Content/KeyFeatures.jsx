@@ -44,16 +44,16 @@ const KeyFeatures = () => {
 
   return (
     <div id="KeyFeatures" className="w-full flex flex-col items-center pb-20">
-      <div className="w-full max-w-screen-xl text-center mb-4 mt-20">
+      <div className="w-full max-w-screen-xl text-center mb-4 mt-20 px-4">
         <h3 className="text-4xl font-bold bg-gradient-to-b from-white to-gray-500 bg-clip-text text-transparent">
           ¿Qué ofrece MechSys Manager?
-          <span className="block text-2xl font-normal text-[#757575] mt-2">
+          <span className="block text-2xl font-normal text-[#757575] mt-2 pt-2">
             Todo lo que necesitas para gestionar laboratorios de Metal-Mecánica
             de manera eficiente.
           </span>
         </h3>
       </div>
-      <div className="w-full max-w-screen-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
+      <div className="w-full max-w-screen-xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-4 sm:p-8">
         {features.map((feature, index) => {
           const { imageUrl, error } = useFetchImage(feature.imageName);
           const finalImageUrl = error
@@ -65,6 +65,7 @@ const KeyFeatures = () => {
               title={feature.title}
               description={feature.description}
               imageUrl={finalImageUrl}
+              className="aspect-w-1 aspect-h-1"
             />
           );
         })}

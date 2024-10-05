@@ -13,7 +13,7 @@ const HomeFooter = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-between">
-          <div className="w-full md:w-1/3 mb-6 md:mb-0">
+          <div className="w-full lg:w-1/3 mb-6 lg:mb-0">
             <h2 className="text-2xl font-bold bg-gradient-to-b from-white to-gray-500 bg-clip-text text-transparent mb-4">
               Contacto
             </h2>
@@ -26,7 +26,7 @@ const HomeFooter = () => {
               metalmecanica@itdurango.edu.mx
             </p>
           </div>
-          <div className="w-full md:w-1/3 mb-6 md:mb-0 pr-8">
+          <div className="w-full lg:w-1/3 mb-6 lg:mb-0 lg:pr-8">
             <h2 className="text-2xl font-bold bg-gradient-to-b from-white to-gray-500 bg-clip-text text-transparent mb-4">
               Comentarios y Sugerencias
             </h2>
@@ -40,7 +40,7 @@ const HomeFooter = () => {
             </p>
           </div>
 
-          <div className="w-full md:w-1/3 mb-6 md:mb-0 pl-8">
+          <div className="w-full lg:w-1/3 mb-6 lg:mb-0 lg:pl-8">
             <h2 className="text-2xl font-bold bg-gradient-to-b from-white to-gray-500 bg-clip-text text-transparent mb-4">
               Enlaces Útiles
             </h2>
@@ -81,11 +81,13 @@ const HomeFooter = () => {
           </div>
         </div>
         <div className="flex flex-wrap justify-between items-center mt-8 pt-2">
-          <div className="w-full md:w-auto mb-4 md:mb-0">
-            <p className="text-[#757575]">© 2024 MechSys Manager, ITD.</p>
+          <div className="w-full lg:w-auto mb-4 lg:mb-0">
+            <p className="text-[#757575] text-center lg:text-left">
+              © 2024 MechSys Manager, ITD.
+            </p>
           </div>
-          <div className="w-full md:w-auto">
-            <div className="flex items-center justify-center">
+          <div className="w-full lg:w-auto">
+            <div className="flex items-center justify-center lg:justify-end">
               {imageUrl && (
                 <img
                   className="w-8 h-8 object-cover mr-2 filter grayscale"
