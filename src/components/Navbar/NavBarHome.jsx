@@ -68,7 +68,7 @@ const NavBarHome = () => {
   if (!imageUrl) return null;
 
   return (
-    <div className="fixed top-0 left-0 w-full px-4 md:px-20 h-16 md:h-24 bg-black/50 transform transition duration-500 border-b-2 border-[#303030] z-50 hover:bg-black/80 backdrop-blur-md backdrop-brightness-125">
+    <div className="fixed top-0 left-0 w-full px-4 md:px-8 lg:px-16 h-16 md:h-24 bg-black/50 transform transition duration-500 border-b-2 border-[#303030] z-50 hover:bg-black/80 backdrop-blur-md backdrop-brightness-125">
       <div className="h-full flex items-center justify-between">
         <div className=" h-full flex items-center">
           <a href="#home" onClick={(e) => handleScroll(e, "home")}>

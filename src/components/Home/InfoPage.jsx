@@ -6,7 +6,7 @@ const InfoPage = () => {
   const handleScroll = (event, id) => {
     event.preventDefault();
     const section = document.getElementById(id);
-    const offset = -50; // Ajusta este valor según sea necesario
+    const offset = -50;
     const bodyRect = document.body.getBoundingClientRect().top;
     const elementRect = section.getBoundingClientRect().top;
     const elementPosition = elementRect - bodyRect;

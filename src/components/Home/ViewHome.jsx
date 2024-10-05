@@ -9,7 +9,7 @@ const ViewHome = () => {
   return (
     <div
       id="home"
-      className="w-screen h-screen flex flex-col bg-[#F5F5F7] relative"
+      className="w-screen h-screen flex flex-col bg-[#F5F5F7] relative min-h-[650px]"
     >
       {imageUrl && (
         <div className="absolute top-0 left-0 w-full h-full z-0">
