@@ -19,7 +19,7 @@ const AdminPage = () => {
     Cookies.remove("token");
     sessionStorage.removeItem("token");
     // Redirigir a la página de inicio de sesión
-    navigate("/home");
+    navigate("/");
   };
 
   return (
@@ -149,4 +149,4 @@ const AdminPage = () => {
   );
 };
 
-export { AdminPage };
+export default AdminPage;

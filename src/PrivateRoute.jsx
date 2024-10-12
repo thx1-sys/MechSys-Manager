@@ -3,7 +3,7 @@ import { Navigate } from "react-router-dom";
 import axios from "axios";
 import Cookies from "js-cookie";
 
-const PrivateRoute = ({ element: Component }) => {
+const PrivateRoute = ({ children }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [loading, setLoading] = useState(true);
 
@@ -38,7 +38,7 @@ const PrivateRoute = ({ element: Component }) => {
     return <div>Loading...</div>;
   }
 
-  return isAuthenticated ? <Component /> : <Navigate to="/login" />;
+  return isAuthenticated ? children : <Navigate to="/login" />;
 };
 
 export default PrivateRoute;

@@ -48,18 +48,19 @@ const CookieConsent = () => {
   }
 
   return (
-    <div className="fixed inset-0 text-white flex flex-col justify-end items-center transform transition duration-500 hover:opacity-90 z-50">
-      <div className="w-full bg-black opacity-50 text-gray-300 p-4 rounded-lg shadow-lg transform transition duration-500 hover:opacity-75">
-        <p className="mb-4 text-center ">
-          Este sitio utiliza cookies para mejorar la experiencia del usuario.{" "}
+    <div className="fixed inset-0 text-white flex justify-center items-center z-50 animate-fadeIn">
+      <div className="w-full h-full bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg text-gray-300 p-4 rounded-lg shadow-lg flex flex-col justify-center items-center">
+        <p className="mb-4 text-center md:text-2xl mx-4 md:mx-20">
+          Este sitio web utiliza cookies para asegurar que obtengas la mejor
+          experiencia posible.
           <a
             href="#"
             onClick={handlePolicyClick}
-            className="underline transform transition duration-500 hover:text-white"
+            className="underline transition duration-500 hover:text-white"
           >
             Lee nuestras políticas de cookies
           </a>
-          .
+          &nbsp;para más información.
         </p>
         <div className="flex flex-col items-center gap-4">
           <div className="flex flex-row items-center gap-4">
@@ -76,10 +77,10 @@ const CookieConsent = () => {
               Aceptar
             </button>
           </div>
-          <div className="transform transition duration-500 opacity-90 hover:opacity-100">
+          <div className="transition duration-500 opacity-90 hover:opacity-100">
             <label
               htmlFor="dontShowAgain"
-              className="flex flex-row items-end gap-2 text-gray-300 font-light text-sm hover:text-white transform transition duration-500"
+              className="flex flex-row items-end gap-2 text-gray-300 font-light text-sm hover:text-white transition duration-500"
             >
               <input
                 id="dontShowAgain"
@@ -92,7 +93,7 @@ const CookieConsent = () => {
                 <svg
                   fill="none"
                   viewBox="0 0 24 24"
-                  className="w-5 h-5 stroke-[#212121] transform transition duration-500 hover:stroke-white "
+                  className="w-5 h-5 stroke-[#212121] transition duration-500 hover:stroke-white "
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
