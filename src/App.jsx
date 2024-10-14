@@ -13,6 +13,8 @@ const LoginPage = lazy(() => import("./pages/LoginPage"));
 const SignUp = lazy(() => import("./pages/SignUp"));
 const AdminPage = lazy(() => import("./pages/AdminPage"));
 const HomeStudenPage = lazy(() => import("./pages/StudenHome"));
+const BorrowForm = lazy(() => import("./components/Form/BorrowForm"));
+const RentForm = lazy(() => import("./components/Form/RentForm"));
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -52,6 +54,8 @@ function App() {
               path="/student_home"
               element={<HomeStudenPage onLoad={handleImageLoad} />}
             />
+            <Route path="/student_home/borrow" element={<BorrowForm />} />
+            <Route path="/student_home/rent" element={<RentForm />} />
             <Route
               path="/login"
               element={<LoginPage onLoad={handleImageLoad} />}
